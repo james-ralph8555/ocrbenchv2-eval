@@ -28,41 +28,41 @@ just eval
 ### Change Models/Eval Metrics
 
 As configured, the following metrics are run:
-        "document classification en"
-        "document parsing en"
-        "full-page OCR en"
-        "key information extraction en"
-        "reasoning VQA en"
+     - document classification en
+     - document parsing en
+     - full-page OCR en
+     - key information extraction en
+     - reasoning VQA en
 The following are disabled:
-        "APP agent en"
-        "ASCII art classification en"
-        "chart parsing en"
-        "chart parsing en"
-        "cognition VQA cn"
-        "cognition VQA en"
-        "cognition VQA en"
-        "diagram QA en"
-        "diagram QA en"
-        "document parsing cn"
-        "fine-grained text recognition en"
-        "formula recognition cn"
-        "formula recognition en"
-        "full-page OCR cn"
-        "handwritten answer extraction cn"
-        "key information extraction cn"
-        "key information mapping en"
-        "math QA en"
-        "reasoning VQA cn"
-        "science QA en"
-        "table parsing cn"
-        "table parsing en"
-        "table parsing en"
-        "text counting en"
-        "text grounding en"
-        "text recognition en"
-        "text spotting en"
-        "text translation cn"
-        "VQA with position en"
+     - APP agent en
+     - ASCII art classification en
+     - chart parsing en
+     - chart parsing en
+     - cognition VQA cn
+     - cognition VQA en
+     - cognition VQA en
+     - diagram QA en
+     - diagram QA en
+     - document parsing cn
+     - fine-grained text recognition en
+     - formula recognition cn
+     - formula recognition en
+     - full-page OCR cn
+     - handwritten answer extraction cn
+     - key information extraction cn
+     - key information mapping en
+     - math QA en
+     - reasoning VQA cn
+     - science QA en
+     - table parsing cn
+     - table parsing en
+     - table parsing en
+     - text counting en
+     - text grounding en
+     - text recognition en
+     - text spotting en
+     - text translation cn
+     - VQA with position en
 
 The following models are currently chosen:
 
