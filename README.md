@@ -77,6 +77,7 @@ VQA_MODELS = ["gemini/gemini-2.0-flash", "groq/meta-llama/llama-4-scout-17b-16e-
 ```
 
 Change eval metrics in the main area of scripts/ocrbench_run.py and scripts/eval.py
+
 Change models to any model supported by litellm in scripts/ocrbench_run.py
 
 **Make sure you setup your dotenv**
