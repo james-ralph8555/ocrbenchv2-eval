@@ -3,6 +3,10 @@
 Official OCRBenchv2 Repo:
 https://github.com/Yuliang-Liu/MultimodalOCR
 
+Make sure you download the OCRBench2 from the dataset and extract in the DATA_DIR folder specified in .env:
+
+https://github.com/Yuliang-Liu/MultimodalOCR/tree/main/OCRBench_v2#data
+
 # Usage
 
 ### Install basic dependencies
