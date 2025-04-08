@@ -28,12 +28,15 @@ just eval
 ### Change Models/Eval Metrics
 
 As configured, the following metrics are run:
+
      - document classification en
      - document parsing en
      - full-page OCR en
      - key information extraction en
      - reasoning VQA en
+
 The following are disabled:
+
      - APP agent en
      - ASCII art classification en
      - chart parsing en
