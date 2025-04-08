@@ -1,0 +1,53 @@
+[project]
+name = "OCRBenchv2"
+version = "0.0.0"
+description = "Changed From https://github.com/Yuliang-Liu/MultimodalOCR"
+authors = [
+  {name="Ling Fu"},
+  {name="Biao Yang"},
+  {name="Zhebin Kuang"},
+  {name="Jiajun Song"},
+  {name="Yuzhe Li"},
+  {name="Linghao Zhu"},
+  {name="Qidi Luo"},
+  {name="Xinyu Wang"},
+  {name="Hao Lu"},
+  {name="Mingxin Huang"},
+  {name="Zhang Li"},
+  {name="Guozhi Tang"},
+  {name="Bin Shan"},
+  {name="Chunhui Lin"},
+  {name="Qi Liu"},
+  {name="Binghong Wu"},
+  {name="Hao Feng"},
+  {name="Hao Liu"},
+  {name="Can Huang"},
+  {name="Jingqun Tang"},
+  {name="Wei Chen"},
+  {name="Lianwen Jin"},
+  {name="Yuliang Liu"},
+  {name="Xiang Bai"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+  "numpy",
+  "distance",
+  "apted",
+  "lxml",
+  "zss",
+  "Levenshtein",
+  "editdistance",
+  "nltk",
+  "jieba",
+  "Polygon3",
+  "tqdm",
+  "ipdb",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/OCRBenchv2"]

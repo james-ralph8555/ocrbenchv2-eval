@@ -1,0 +1,23 @@
+[project]
+name = "core"
+version = "0.0.0"
+description = "Evaluates https://github.com/Yuliang-Liu/MultimodalOCR via LiteLLM"
+authors = [
+  {name="James Ralph", email="james.ralph8555@gmail.com"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+  "OCRBenchv2"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+OCRBenchv2 = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/core"]
+

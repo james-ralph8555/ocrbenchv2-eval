@@ -1,0 +1,68 @@
+[project]
+name = "ocrbenchv2-eval"
+version = "0.0.0"
+description = "Evaluates https://github.com/Yuliang-Liu/MultimodalOCR via LiteLLM"
+authors = [
+  {name="James Ralph", email="james.ralph8555@gmail.com"}
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+  "rust-just",
+  "uv",
+  "pandas",
+  "numpy",
+  "litellm",
+  "python-dotenv",
+  "Pillow",
+  "google-generativeai",
+  "boto3",
+  "aiometer",
+  "ruff"
+]
+
+[tool.uv.sources]
+OCRBenchv2 = { workspace = true }
+core = { workspace = true }
+
+
+[tool.uv.workspace]
+members = [
+  "src/*", "MultimodalOCR/*"
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pre-commit>=3.8.0",
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.2",
+    # These are added as dev dependencies becuase they should be available
+    #  when developing the project.
+    "core",
+]
+package = false
+
+[tool.ruff]
+lint.ignore = ["E501"]
+extend-exclude = [
+  "__pycache__",
+  ".eggs",
+  ".git",
+  ".venv",
+  "build",
+  "dist",
+  "notebooks",
+  ".cache"
+]
+line-length = 100
+
+[tool.pyright]
+exclude = [".venv", ".github", "docs", "tests", ".devcontainer"]
+include = ["src", "scripts"]
+pythonVersion = "3.12"
+venvPath = "$HOME/.venvs"
+venv = "ocrbench"
+
+[tool.pytest.ini_options]
+cache_dir = "/home/vscode/workspace/.cache/pytest"
+pythonpath = [".", "scripts"]
