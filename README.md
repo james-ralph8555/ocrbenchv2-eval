@@ -70,9 +70,11 @@ The following are disabled:
 The following models are currently chosen:
 
 
+```python
 LLM_OCR_MODELS = ["gemini/gemini-2.0-flash", "groq/meta-llama/llama-4-scout-17b-16e-instruct", "bedrock/us.anthropic.claude-3-haiku-20240307-v1:0"]
 OCR_QA_MODEL = "gemini/gemini-2.0-flash"
 VQA_MODELS = ["gemini/gemini-2.0-flash", "groq/meta-llama/llama-4-scout-17b-16e-instruct",  "bedrock/us.anthropic.claude-3-haiku-20240307-v1:0"] 
+```
 
 Change eval metrics in the main area of scripts/ocrbench_run.py and scripts/eval.py
 Change models to any model supported by litellm in scripts/ocrbench_run.py
